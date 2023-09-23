@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Noto Sans', sans-serif;
+
+    background: url('../img/bg.svg'), linear-gradient(to bottom, rgb(255, 255, 255), rgb(185, 184, 184));
+
+    width: 100vw;
+    height: 100vh;
+}
+
+text {
+    fill: white;
+    font-size: 18px;
+    user-select: none;
+}
+
+g {
+    pointer-events: all;
+}
+
+#canvas {
+    width: 1200px;
+    height: 600px;
+    transform: translate(calc(50vw - 600px), calc(50vh - 300px));
+}
+
+.ui, .title {
+    display: block;
+    position: absolute;
+}
+
+.ui {
+    top: 15px;
+    left: 15px;
+
+    padding: 25px;
+
+    background: linear-gradient(to bottom, rgb(121, 120, 120), rgb(185, 184, 184));
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.5);
+    color: white;
+}
+
+.title {
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgb(0, 0, 0, 0));
+}
+
+.title img {
+    margin-bottom: 50px;
+}
+
+.button {
+    margin: 5px;
+
+    color: white;
+
+    background: rgb(218, 96, 96);
+    box-shadow: 0px 0px 25px 10px rgb(255, 0, 0, 0.5);
+
+    font-weight: bold;
+
+    padding: 25px;
+
+    width: 500px;
+    text-align: center;
+    height: 40px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.buttons {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buttons .button {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#border {
+    fill: url(#sand);
+}
+
+svg {
+    background: url('../img/space.svg');
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.5);
+}
